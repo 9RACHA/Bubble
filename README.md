@@ -64,6 +64,7 @@ public class ObjectDestroyer : MonoBehaviour {
 // RETRASO
 public class DelayedObjectDestroyer : MonoBehaviour {
 
+
     public GameObject objectToDestroy;
     public float delay = 2f;
 

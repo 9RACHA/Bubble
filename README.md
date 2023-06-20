@@ -1,4 +1,4 @@
-# Bubble
+# BubbleColors
 
 ### Coroutinas
 Las corutinas en Unity son utilizadas para realizar tareas asincrónicas y ejecutar acciones en un lapso de tiempo específico. Para spawnear objetos usando una corutina, puedes seguir los siguientes pasos:
@@ -31,5 +31,27 @@ public class ObjectSpawner : MonoBehaviour {
         }
     }
 }
+
+## Spawn
+Para realizar el spawning (creación) de objetos en Unity, puedes utilizar la función Instantiate(). Esta función te permite crear una instancia de un objeto en la escena:
+
+using UnityEngine;
+
+public class ObjectSpawner : MonoBehaviour
+{
+    public GameObject objectToSpawn;
+
+    void Start()
+    {
+        SpawnObject();
+    }
+
+    void SpawnObject()
+    {
+        Instantiate(objectToSpawn, transform.position, Quaternion.identity);
+    }
+}
+
+
 
 

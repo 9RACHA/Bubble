@@ -33,8 +33,8 @@ public class ObjectSpawner : MonoBehaviour {
 ## Spawn
 Para realizar el spawning (creación) de objetos en Unity, puedes utilizar la función Instantiate(). Esta función te permite crear una instancia de un objeto en la escena:
 
-public class ObjectSpawner : MonoBehaviour
-{
+public class ObjectSpawner : MonoBehaviour {
+
     public GameObject objectToSpawn;
 
     void Start()

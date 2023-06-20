@@ -12,8 +12,8 @@ Repite el bucle o condición según tus necesidades, o utiliza una condición de
 using UnityEngine;
 using System.Collections;
 
-public class ObjectSpawner : MonoBehaviour
-{
+public class ObjectSpawner : MonoBehaviour {
+
     public GameObject objectToSpawn;
     public float spawnInterval = 1f;
 

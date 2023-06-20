@@ -50,8 +50,8 @@ public class ObjectSpawner : MonoBehaviour
 ## Destroy
 La función Destroy() en Unity se utiliza para destruir un objeto o componente en la escena. Puedes usar esta función para eliminar objetos que ya no sean necesarios durante la ejecución del juego:
 
-public class ObjectDestroyer : MonoBehaviour
-{
+public class ObjectDestroyer : MonoBehaviour {
+
     public GameObject objectToDestroy;
 
     void Start()
@@ -61,8 +61,8 @@ public class ObjectDestroyer : MonoBehaviour
 }
 
 // RETRASO
-public class DelayedObjectDestroyer : MonoBehaviour
-{
+public class DelayedObjectDestroyer : MonoBehaviour {
+
     public GameObject objectToDestroy;
     public float delay = 2f;
 

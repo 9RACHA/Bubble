@@ -9,9 +9,6 @@ Dentro del bucle o condición, utiliza la función Instantiate() para crear una 
 Después de instanciar el objeto, puedes realizar cualquier configuración adicional que necesites, como asignarle una posición o rotación.
 Repite el bucle o condición según tus necesidades, o utiliza una condición de finalización para determinar cuándo detener el spawning de objetos.
 
-using UnityEngine;
-using System.Collections;
-
 public class ObjectSpawner : MonoBehaviour {
 
     public GameObject objectToSpawn;
@@ -35,8 +32,6 @@ public class ObjectSpawner : MonoBehaviour {
 ## Spawn
 Para realizar el spawning (creación) de objetos en Unity, puedes utilizar la función Instantiate(). Esta función te permite crear una instancia de un objeto en la escena:
 
-using UnityEngine;
-
 public class ObjectSpawner : MonoBehaviour
 {
     public GameObject objectToSpawn;
@@ -51,6 +46,32 @@ public class ObjectSpawner : MonoBehaviour
         Instantiate(objectToSpawn, transform.position, Quaternion.identity);
     }
 }
+
+## Destroy
+La función Destroy() en Unity se utiliza para destruir un objeto o componente en la escena. Puedes usar esta función para eliminar objetos que ya no sean necesarios durante la ejecución del juego:
+
+public class ObjectDestroyer : MonoBehaviour
+{
+    public GameObject objectToDestroy;
+
+    void Start()
+    {
+        Destroy(objectToDestroy);
+    }
+}
+
+// RETRASO
+public class DelayedObjectDestroyer : MonoBehaviour
+{
+    public GameObject objectToDestroy;
+    public float delay = 2f;
+
+    void Start()
+    {
+        Destroy(objectToDestroy, delay);
+    }
+}
+
 
 
 

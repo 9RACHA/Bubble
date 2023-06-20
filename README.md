@@ -1,6 +1,6 @@
 # Bubble
 
-### Corutinas
+### Coroutinas
 Las corutinas en Unity son utilizadas para realizar tareas asincrónicas y ejecutar acciones en un lapso de tiempo específico. Para spawnear objetos usando una corutina, puedes seguir los siguientes pasos:
 
 Crea un nuevo script en C# o abre uno existente en Unity.
